@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import iconArrow from "../assets/images/icon-arrow.svg";
 import { AppContext } from "../App";
 
