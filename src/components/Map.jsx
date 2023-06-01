@@ -11,11 +11,11 @@ export default function Map() {
   const { lng, setLng, lat, setLat, userIp, setLocation, setTimeZone, setISP } =
     useContext(AppContext);
 
+    //  https://geo.ipify.org/api/v2/country,city?apiKey=at_FS0dVlmLF0F0PfD53SRZkOs8HzT4P&ipAddress=8.8.8.8
   const getAddress = async () => {
     const resp = await fetch(
-      `https://geo.ipify.org/api/v2/country,city?apiKey=${
-        import.meta.env.VITE_GEO_IPIFY
-      }&ipAddress=${userIp}`
+      `https://geo.ipify.org/api/v2/country,city?apiKey=at_FS0dVlmLF0F0PfD53SRZkOs8HzT4P&ipAddress=8.8.8.8
+      &ipAddress=${userIp}`
     );
     const data = await resp.json();
     setLng(data.location.lng);
