@@ -20,7 +20,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Add solution URL here](https://github.com/MuneneCalvin/IP-Address-Tracker)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
 ## My process
@@ -37,6 +37,5 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [https://www.frontendmentor.io/profile/OneManBanned](https://www.frontendmentor.io/profile/OneManBanned)
-- Twitter - [@https://twitter.com/LawlessWebDev](https://twitter.com/LawlessWebDev)
+
 

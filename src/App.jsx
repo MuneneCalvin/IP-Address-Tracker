@@ -42,9 +42,9 @@ function App() {
   function fetchData(firstLoad) {
     let url = ''
     if (firstLoad) {
-      url = 'https://geo.ipify.org/api/v2/country,city?apiKey=at_IhQt976oG5TLZY7NOFQDdbiA5m6rh&'
+      url = 'https://geo.ipify.org/api/v2/country,city?apiKey=at_FS0dVlmLF0F0PfD53SRZkOs8HzT4P&ipAddress=8.8.8.8'
     } else {
-      url = `https://geo.ipify.org/api/v2/country,city?apiKey=at_IhQt976oG5TLZY7NOFQDdbiA5m6rh&${inputParam}=${userInput}`
+      url = `https://geo.ipify.org/api/v2/country,city?apiKey=at_FS0dVlmLF0F0PfD53SRZkOs8HzT4P&ipAddress=8.8.8.8${inputParam}=${userInput}`
     }
     fetch(url)
       .then((res) => {
@@ -132,7 +132,7 @@ function App() {
         <form noValidate onSubmit={(e) => submitIP(e)}>
           <span
             onClick={() => input.current.focus()}>{errMsg}</span>
-          <label htmlFor="input">IP addres</label>
+          <label htmlFor="input">IP address</label>
           <input
             type="text"
             value={userInput}
