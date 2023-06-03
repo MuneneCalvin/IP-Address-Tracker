@@ -1,0 +1,201 @@
+@use '../abstracts/breakpoints.scss' as *;
+
+main {
+    @include tablet {
+        background: url('/images/pattern-bg-desktop.png') #6086f3 no-repeat;
+    }
+
+    background: url('/images/pattern-bg-mobile.png') #6086f3 no-repeat;
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+section {
+    margin-top: .6rem;
+    width: 85%;
+    height: fit-content;
+    position: relative;
+    z-index: 100;
+
+    @include desktop {
+        max-width: 61.75rem;
+    }
+}
+
+h1 {
+    color: white;
+    margin-block: 1rem;
+    font-weight: 400;
+    font-size: 1.45rem;
+
+    @include desktop {
+        font-size: 1.75rem;
+        margin-block-end: .2rem;
+    }
+}
+
+form {
+    min-height: 3rem;
+    border-radius: .75rem;
+    min-width: 100%;
+    display: flex;
+    margin-top: 1.4rem;
+    position: relative;
+
+    @include desktop {
+        min-height: 3.2rem;
+        min-width: 30.5rem;
+        display: inline-flex;
+    }
+
+    span {
+        cursor: pointer;
+        position: absolute;
+        left: 4.75%;
+        top: 28%;
+        color: orange;
+        font-weight: 500;
+    }
+
+    label {
+        visibility: hidden;
+        position: absolute;
+    }
+
+    input {
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 500;
+        width: calc(100% - 3rem);
+        border: none;
+        padding-left: 1.5rem;
+        border-bottom-left-radius: .75rem;
+        border-top-left-radius: .75rem;
+
+        &:focus {
+            outline: 2px solid orange;
+        }
+    }
+
+    button {
+        cursor: pointer;
+        background: 50% 50% url('/images/icon-arrow.svg') black no-repeat;
+        min-width: 3.5rem;
+        border: none;
+        border-top-right-radius: .75rem;
+        border-bottom-right-radius: .75rem;
+
+        &:focus,
+        &:hover {
+            background-color: hsl(0, 0%, 17%);
+        }
+
+        &:focus {
+            outline: 2px solid orange;
+        }
+    }
+}
+
+.outputContainer {
+    margin-top: 1.5rem;
+    padding-block: .25rem;
+    border-radius: .75rem;
+    background-color: white;
+
+    @include desktop {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 3%;
+        margin-top: 2.7rem;
+        padding-inline: max(2rem);
+    }
+
+    div {
+        margin-block: 1.25rem;
+
+        @include desktop {
+            text-align: left;
+            width: 25%;
+            padding: 2%;
+            line-break: loose;
+            margin-block: .5rem;
+        }
+    }
+
+    div:first-of-type {
+        @include desktop {
+            border-left: none;
+            padding-left: 0;
+            line-break: anywhere;
+        }
+    }
+
+    div:last-of-type {
+        @include desktop {
+            dd::after {
+                content: '';
+                position: absolute;
+                width: 0;
+                height: 0;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+
+    dt {
+        font-size: .55rem;
+        letter-spacing: .1rem;
+        font-weight: 500;
+        margin-bottom: .47rem;
+        color: hsl(0, 0%, 59%);
+
+        @include desktop {
+            font-size: .7rem;
+            font-weight: 700;
+        }
+    }
+
+    dd {
+        font-size: 1.1rem;
+        font-weight: 500;
+
+        @include desktop {
+            font-size: 1.5rem;
+            margin-top: .75rem;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                width: 1px;
+                height: 4rem;
+                top: 0;
+                right: 0;
+                background-color: hsl(0, 0%, 59%);
+                margin-right: -18%;
+                margin-top: calc(-1rem + 5%);
+            }
+        }
+    }
+}
+
+.leaflet-container {
+    @include tablet {
+        height: calc(100vh - 280px)
+    }
+
+    height: calc(100vh - 300px);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}
+
+.err {
+    outline: 2px solid orange;
+}

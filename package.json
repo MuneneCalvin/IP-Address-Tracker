@@ -1,5 +1,5 @@
 {
-  "name": "ip-address",
+  "name": "ip-address-tracker-master",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,10 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "mapbox": "^1.0.0-beta10",
-    "mapbox-gl": "^2.15.0",
+    "leaflet": "^1.9.3",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-leaflet": "^4.2.1"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",
