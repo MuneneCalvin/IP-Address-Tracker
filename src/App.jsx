@@ -3,6 +3,7 @@ import { useMap } from 'react-leaflet/hooks'
 import markerIcon from './assets/icon-location.svg'
 import { MapContainer, TileLayer, Marker } from 'react-leaflet'
 import L from 'leaflet'
+// import './styles/app.scss'
 
 function App() {
 
@@ -42,9 +43,9 @@ function App() {
   function fetchData(firstLoad) {
     let url = ''
     if (firstLoad) {
-      url = 'https://geo.ipify.org/api/v2/country,city?apiKey=at_FS0dVlmLF0F0PfD53SRZkOs8HzT4P&ipAddress=8.8.8.8'
+      url = 'https://geo.ipify.org/api/v2/country,city?apiKey=at_FS0dVlmLF0F0PfD53SRZkOs8HzT4P'
     } else {
-      url = `https://geo.ipify.org/api/v2/country,city?apiKey=at_FS0dVlmLF0F0PfD53SRZkOs8HzT4P&ipAddress=8.8.8.8${inputParam}=${userInput}`
+      url = `https://geo.ipify.org/api/v2/country,city?apiKey=at_FS0dVlmLF0F0PfD53SRZkOs8HzT4P${inputParam}=${userInput}`
     }
     fetch(url)
       .then((res) => {
