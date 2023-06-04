@@ -1,41 +1,41 @@
-# Frontend Mentor - IP address tracker solution
+# Frontend Mentor - Testimonials grid section solution
 
-This is a solution to the [IP address tracker challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
+- [Overview](#overview)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+- [Process](#process)
+    - [Tools used](#tools-used)
+    - [What's new?](#whats-new)
+- [Author](#author)
+- [Acknowledgement](#acknowledgement)
 
-  - [The challenge](#the-challenge)  
-  - [Links](#links)
-  - [Built with](#built-with)
-  - [Author](#author)
 
-### The challenge
-
-Users should be able to:
-
-- View the optimal layout for each page depending on their device's screen size
-- See hover states for all interactive elements on the page
-- See their own IP address on the map on the initial page load
-- Search for any IP addresses or domains and see the key information and location
+## Overview
+### Screenshot
+![Screenshot of the webpage]()
 
 ### Links
+- [Github repository](https://github.com/MuneneCalvin/IP-Address-Tracker)
+- [Deployed site]()
 
-- Solution URL: [Add solution URL here](https://github.com/MuneneCalvin/IP-Address-Tracker)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
-## My process
-
-### Built with
-
-- Semantic HTML5 markup
-- CSS custom properties
-- Sass/scss
+## Process
+### Tools Used
+- HTML5
+- CSS
 - Flexbox
-- Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
+- Grid
 
+### What's new?
+I used CSS grid for the layout of the desktop view and flex for the mobile view.
 
 ## Author
+- Calvin Shawn
+- [Email](mailto:munenecalvn@gmail.com)
+- [Linkedin](https://www.linkedin.com/in/Calvin-Munene/)
 
-
-
+## Acknowledgement
+- [Frontend Mentor](https://www.frontendmentor.io/)
+- [FreeCodeCamp Responsive Web Design](https://www.freecodecamp.org/learn/responsive-web-design/)
